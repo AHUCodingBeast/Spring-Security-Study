@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/wsecurity?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #设置redis配置,全是默认,不设置也可以;
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+server:
+  port: 8888
